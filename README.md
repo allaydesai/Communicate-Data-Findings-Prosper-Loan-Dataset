@@ -35,6 +35,8 @@ The following libraries are required to run this project:
 
 This data set contains 113,937 loans with 81 variables on each loan, including loan amount, borrower rate (or interest rate), current loan status, borrower income, and many others.
 
+For the purpose of this analysis following variables were chosen:
+
 **Numerical** 
 
 | Column Name   |
