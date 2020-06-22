@@ -25,10 +25,13 @@ The following libraries are required to run this project:
 <ul>
   <li>Prosper_Dataset_Exploration.ipynb</li>
   <li>Prosper_Dataset_Exploration.html</li>
+  <li>Prosper_Dataset_Explanation.ipynb</li>
+  <li>Prosper_Dataset_Explanation.html</li>
   <li>prosperLoanData.csv</li>
-  <li>SlideDeck.ipynb</li>
-  <li>SlideDeck.html</li>
+  <li>prosperLoanDataCleaned.csv</li>
+  <li>ProsperDataset_Explanation.slides.html</li>
   <li>README.MD</li>
+  <li>images</li>
 </ul>
 
 ### DATASET
@@ -68,3 +71,42 @@ When looking at categorical variables, it was found that term size has a direct 
 ### KEY INSIGHTS FOR PRESENTATION
 
 For the presentation, the goal was to showcase all the features that have a significant impact on Borrower APR. Once again here you can see that Prosper Score has strongest relationship with Borrower APR. I begin with showing a distribution of Borrower APR and Loan origination amount followed by a comparison of Borrower APR against Prosper Score and Loan Origination amount against Term. Finally, effects of prosper rating on the relationship between Borrower's APR and Loan Origination Amount was explained which was followed up by reaffirming the strong relationship between Borrower APR and Prosper Score.
+
+### Distribution of BorrowerAPR
+
+The Borrower's Annual Percentage Rate (APR) for the loan. Borrower APR in the dataset take on range of values between 0.04(4%) to 0.4(40%). The distribution of borrower APR takes on a multimodal shape.
+
+![alt text](https://github.com/allaydesai/Communicate-Data-Findings-Prosper-Loan-Dataset/blob/master/images/APR.png)
+
+### Distribution of Original Loan Amount
+
+The origination amount of the loan. Spikes are observed at 10k, 15k, 20k and 25k which tells us that these are propular loan amounts.
+
+![alt text](https://github.com/allaydesai/Communicate-Data-Findings-Prosper-Loan-Dataset/blob/master/images/loan.png)
+
+### Borrower APR vs. Prosper Score
+
+Each borrower is assigned a prosper score which is a judgment of his worthyness. Higher the score, better the rating which usually results in a lower borrower's APR. The plot below shows a negative relationship between them which explains that a lower prosper score results in higher borrower's APR.
+
+![alt text](https://github.com/allaydesai/Communicate-Data-Findings-Prosper-Loan-Dataset/blob/master/images/Score_APR.png)
+
+### Loan Origination Amount vs. Term
+
+Here we compare the origination amount of the loan with the length of the loan expressed in months. We observe a positive trend here, with increase in term length there is an increase in loan origination amount. This is to be expected as most borrowers like to keep their monthly liability relatively low.
+
+![alt text](https://github.com/allaydesai/Communicate-Data-Findings-Prosper-Loan-Dataset/blob/master/images/loan_term.png)
+
+### Effects of Prosper Rating on the relationship between Borrower's APR and Loan Origination Amount
+
+Overall loan origination amount increases with better rating while the borrower's APR decreases. Within each prosper rating group there is mostly a negative relationship between borrower's APR and loan origination amount but this relationship changes to slightly positive trend with better rating.
+
+![alt text](https://github.com/allaydesai/Communicate-Data-Findings-Prosper-Loan-Dataset/blob/master/images/rating_loan.png)
+
+### BorrowerAPR Vs Credit Score & Prosper Score
+
+Overall a negative trend is observed between Borrower APR and credit score. From the visualization we can see that for scores below 700, there are very few points below an APR of 0.20. We also observe that the darker coloring of each point, referring to lower prosper score all lie near higher BorrowerAPR.
+
+![alt text](https://github.com/allaydesai/Communicate-Data-Findings-Prosper-Loan-Dataset/blob/master/images/APR_credit_prosper.png)
+
+
+
